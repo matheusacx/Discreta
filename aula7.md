@@ -82,7 +82,7 @@ s
 
 ...Compra que somente 1 quer (em) ? (s/n) s
 
-ana pagou, somente dividem ana,
+ana pagou, somente dividem: ana,
 50
 ana pagou, somente dividem: beatris,
 10

@@ -138,10 +138,6 @@ Digite as triplas da funcao de transicao (d)?
 4    a     |2
 4    b     |3
 
-
-# Hora da brincadeira Junior
-# NOICE
-
 #EX5.C
 
 Dado o arquivo txt de entrada :
