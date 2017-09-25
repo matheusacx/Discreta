@@ -1,0 +1,20 @@
+Dicas para exercicio 3:
+
+$./ex3.x 5 6 7 <enter>
+
+usar estrutura desta maneira:
+
+float media(int n, ...);
+
+int main(int argc, char *argv[])
+{
+    m = media(3,5,6,7);
+    ...
+}
+
+Dica: Usar switch e case para quantidade de numeros para a media;
+
+if(n == 2)
+    m = media(n, v[0], v[1]);
+if(n == 3)
+    m = media(n, v[0], v[1], v[2]);
