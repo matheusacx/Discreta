@@ -28,7 +28,7 @@ Dica: App Algoritim
  Abrangência               | Linguagem                                         | Gramática(gerador)                        | Máquina()                                     |
 ---------------------------|---------------------------------------------------|-------------------------------------------|-----------------------------------------------|
 Mais abrangente            |  Tipo . 0  - conjuntos recursivos enumeráveis     | Gramática irrestrita ilimitada            | Máquina de Turing com memória finita ilimitada|
-                           |  Tipo . 1  - sensíveis ao contexto                | Gramática sensível ao contexto            | Máquina de Turing com memória limitada        |
-                           |  Tipo . 2  - livros de contexto                   | Gramática livre de contexto               | Autómatos à pilha                             |
+|  Tipo . 1  - sensíveis ao contexto                | Gramática sensível ao contexto            | Máquina de Turing com memória limitada        |
+|  Tipo . 2  - livros de contexto                   | Gramática livre de contexto               | Autómatos à pilha                             |
 Mais simples (restrita)    |  Tipo . 3  - conjuntos regulares                  | Gramática linear (à esquerda ou à direita)| Autómatos finitos                             |
 
