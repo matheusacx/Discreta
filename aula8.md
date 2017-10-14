@@ -22,7 +22,7 @@ Por exemplo:
     A = { 8, vermeleho, {(conjunto-vazio),b}} e
     B = {1,2,3}
 
-    São equivalentes numeros. Basta supor
+São equivalentes numeros. Basta supor:
     f: A -> B / 
     f(8) = 1
     f(vermelho) = 2
@@ -32,26 +32,26 @@ Também são os múltiplos de 17 e os quadrados perfeitos. Uma bijeção é dada
 Em geral chamamos um conjunto de finito se ele é equinumeroso com {1,2,...,n} para algun n pertencente aos Naturais. Para n =0,
 o conjunto é vazio, logo (símbolo do conjunto vazio) é finito, equinumeroso com ele próprio.
 
-Um conjunto é infinito se ele não é finito.
-Um conjunto é dito contavelmente finito se ele é equinumeroso aos Naturais.
-Um conjunto é contável se é finito ou contavelmente infinito, senão é incontável.
+* Um conjunto é infinito se ele não é finito.
+* Um conjunto é dito contavelmente finito se ele é equinumeroso aos Naturais.
+* Um conjunto é contável se é finito ou contavelmente infinito, senão é incontável.
 
 Para demonstrar que um conjunto A é contável, devemos exibir uma função bijetora f: A -> Naturais
 ou podemos sugerir uma forma em que A pode ser enumerado como A = { a0, a1, ... }, uma vez que a numeração
 sugere um bijeção assumindo :  
 
-f(0) = a0
-f(1) = a1
+    f(0) = a0
+    f(1) = a1
 
 e assim sucessivamente...
 
 George Cantor - Numeros racionais e o conjunto infinito :
 
-{1/1, 1/2, 1/3, 1/4, 1/5, 1/6, ... }
-{2/1, 2/2, 2/3, 2/4, 2/5, 2/6, ... }
-{3/1, 3/2, 3/3, 3/4, 3/5, 3/6, ... }
-{4/1, 4/2, 4/3, 4/4, 4/5, 4/6, ... }
-{ ... }
+    {1/1, 1/2, 1/3, 1/4, 1/5, 1/6, ... }
+    {2/1, 2/2, 2/3, 2/4, 2/5, 2/6, ... }
+    {3/1, 3/2, 3/3, 3/4, 3/5, 3/6, ... }
+    {4/1, 4/2, 4/3, 4/4, 4/5, 4/6, ... }
+    { ... }
 
 #Autômato Finito Determinístico ( AFD )
 
@@ -70,11 +70,16 @@ A = { (sigma) , K, so, F, S }
 Um Autômato finito determinístico (AFD) é uma quíntupla, onde:
 
 (sigma) : Alfabeto
+
 K :       Conjunto de estados
+
 so:       Estado inicial, so pertence a K
+
 f:        Conjunto de estados finais F está contido em K
+
 S:        Função de transição
-Oou seja, dado um estado e um símbolo lido, tem-se um novo estado
+
+Ou seja, dado um estado e um símbolo lido, tem-se um novo estado
 
 A1 = { (SIGMAi), Ki, soi, Fi, Si }
 
@@ -83,65 +88,68 @@ Ki =  {0,1,2,3,4}
 soi = 0
 Fi = {1,2,4}
 
-Ki Sigmai  Ki
-0    a     |0
-0    b     |1
-1    a     |2
-1    b     |3
-2    a     |2
-2    b     |3 
-3    a     |4
-3    b     |-
-4    a     |2
-4    b     |3
+| Ki | Sigmai | Ki |
+|----|--------|----|
+|0   |a       |0   |
+|0   |b       |1   |
+|1   |a       |2   |
+|1   |b       |3   |
+|2   |a       |2   |
+|2   |b       |3   | 
+|3   |a       |4   |
+|3   |b       |-   |
+|4   |a       |2   |
+|4   |b       |3   |
 
 
 #Fazendo um autômato em C
 
-char alpha[27];
-int k;
-int s;
+    char alpha[27];
+    int k;
+    int s;
 
-Entre com um autômato:
+    Entre com um autômato:
 
-/* Aloca uma string de tamanho fixo/dinâmico */
+    /* Aloca uma string de tamanho fixo/dinâmico */
 
-Qual o alfabeto (sigma) ? 
+    Qual o alfabeto (sigma) ? 
 
-Quantos estados (K) ?
+    Quantos estados (K) ?
 
-/* 5 */
+    /* 5 */
 
-Estado inicial (S) ?
+    Estado inicial (S) ?
 
-/* 0 */
+    /* 0 */
 
-Quantos estados finais (Nf) ?
+    Quantos estados finais (Nf) ?
 
-/* 3 */
+    /* 3 */
 
-Digite os estados finais (F) ? ( e -1 para terminar )
+    Digite os estados finais (F) ? ( e -1 para terminar )
 
-/* 1, 2 , 4 */ /* -1 */
+    /* 1, 2 , 4 */ /* -1 */
 
 
-Digite as triplas da funcao de transicao (d)?
-
-0    a     |0
-0    b     |1
-1    a     |2
-1    b     |3
-2    a     |2
-2    b     |3 
-3    a     |4
-3    b     |-
-4    a     |2
-4    b     |3
+    Digite as triplas da funcao de transicao (d)?
+|    |        |    |
+|----|--------|----|
+|0   |a       |0   |
+|0   |b       |1   |
+|1   |a       |2   |
+|1   |b       |3   |
+|2   |a       |2   |
+|2   |b       |3   | 
+|3   |a       |4   |
+|3   |b       |-   |
+|4   |a       |2   |
+|4   |b       |3   |
 
 #EX5.C
 
 Dado o arquivo txt de entrada :
 
+|               |
 |---------------| 
 | ab            |
 | 5             |
@@ -154,18 +162,17 @@ Dado o arquivo txt de entrada :
 | 1 a 2         |
 | 2 b 3         |
 | 3 a 4         |
-|---------------|
 
 Leia e imprima a quintupla na forma
 
-A = { (sigma) , K, so, F, S }
+    A = { (sigma) , K, so, F, S }
 
-A1 = { (SIGMAi), Ki, soi, Fi, Si }
+    A1 = { (SIGMAi), Ki, soi, Fi, Si }
 
-SIGMAi = {a,b}
-Ki =  {0,1,2,3,4}
-soi = 0
-Fi = {1,2,4}
+    SIGMAi = {a,b}
+    Ki =  {0,1,2,3,4}
+    soi = 0
+    Fi = {1,2,4}
 
 Dicas :
 
