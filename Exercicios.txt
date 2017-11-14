@@ -5,9 +5,9 @@ ex2 - Funcao de sortear sem repeticao
 ex3 - Media com função de argumentos variáveis (argc e argv para a main e ... para funcao media)
 ex4 - Programa de contas da republica
 ex5 - Leitura de automato por arquivo
-ex6 - 
-ex7 - 
-ex8 - 
+ex6 - Funcoes de lista do hydrabox 
+ex7 - Funcao de inserir um nodo em qualquer posicao da lista
+ex8 - Inserir e ler um bit
 ex9 - Quantos dados para uma fração?  
 ex10 - 
 ex11 - NERDQUIZ (trabalho final em grupo)
