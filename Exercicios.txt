@@ -1,0 +1,15 @@
+LISTA de EXERCICIOS - MATEMATICA DISCRETA para CONTAUTO (Periodo 2017.2)
+
+ex1 - allegro (fazer algum desenho com a biblioteca allegro)
+ex2 - Funcao de sortear sem repeticao 
+ex3 - Media com função de argumentos variáveis (argc e argv para a main e ... para funcao media)
+ex4 - Programa de contas da republica
+ex5 - Leitura de automato por arquivo
+ex6 - 
+ex7 - 
+ex8 - 
+ex9 - Quantos dados para uma fração?  
+ex10 - 
+ex11 - NERDQUIZ (trabalho final em grupo)
+ex12 - Algoritmos de impressao de arvore (Pre-order, In-order, Pos-order)
+ex13 - Bineco (genio que aprende por arvore)
